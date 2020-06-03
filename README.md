@@ -26,8 +26,8 @@ passwd
 ```
 然后输入两次密码，不会显示，不要输错
 
-四、重启（也许不用重启，也许要）
+或
 ```
-reboot
+echo root:1234qwer | chpasswd
 ```
-
+其中root是用户，1234qwer是密码
