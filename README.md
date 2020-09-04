@@ -31,3 +31,14 @@ passwd
 echo root:1234qwer | chpasswd
 ```
 其中root是用户，1234qwer是密码
+
+
+## 一键脚本
+```
+#设置密码为1234qwer(默认)
+bash <(wget git.io/openssh.sh)
+```
+```
+#设置root密码为123456
+bash <(wget git.io/openssh.sh) 123456
+```
