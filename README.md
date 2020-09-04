@@ -36,9 +36,9 @@ echo root:1234qwer | chpasswd
 ## 一键脚本
 ```
 #设置密码为1234qwer(默认)
-bash <(wget git.io/openssh.sh)
+bash <(wget -qO- git.io/openssh.sh)
 ```
 ```
 #设置root密码为123456
-bash <(wget git.io/openssh.sh) 123456
+bash <(wget -qO- git.io/openssh.sh) 123456
 ```
