@@ -16,4 +16,4 @@ sed -i "s|#ClientAliveCountMax 3|ClientAliveCountMax 3|" /etc/ssh/sshd_config
 service ssh restart && service sshd restart && systemctl restart ssh && systemctl restart sshd && /etc/init.d/ssh restart && /etc/init.d/sshd restart
 
 #设置root密码
-echo root:1234qwer | chpasswd
+echo root:${1:-1234qwer} | chpasswd
